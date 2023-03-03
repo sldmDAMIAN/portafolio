@@ -3,6 +3,7 @@
   height: 80px;
   background-color: var(--secundario);
   position: fixed;
+  z-index: 10;
 }
 
 .cabecera {
