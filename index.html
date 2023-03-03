@@ -29,12 +29,14 @@
     <header class="header">
       <div class="cabecera">
         <div class="logo">
-          <img
-            width="200"
-            height="200"
-            src="./assets/img/logo-png/LogoWebColor-min.png"
-            alt="Imagen Logo"
-          />
+          <a href="./">
+            <img
+              width="200"
+              height="200"
+              src="./assets/img/logo-png/LogoWebColor-min.png"
+              alt="Imagen Logo"
+            />
+          </a>
         </div>
 
         <i class="fa-solid fa-bars barras"></i>
@@ -54,10 +56,10 @@
               <a class="menu__enlace" href="#formacion">Formacion</a>
             </li>
             <li class="menu__item">
-              <a class="menu__enlace" href="#">Proyectos</a>
+              <a class="menu__enlace" href="#proyectos">Proyectos</a>
             </li>
             <li class="menu__item">
-              <a class="menu__enlace" href="#">Contacto</a>
+              <a class="menu__enlace" href="#contacto">Contacto</a>
             </li>
           </ul>
         </nav>
@@ -888,6 +890,110 @@
         </div>
       </section>
     </main>
+
+    <section class="contacto contenedor" id="contacto">
+      <h1 class="titulo text-center">Contacto</h1>
+
+      <form class="formulario centrar-texto" action="">
+        <div class="campo">
+          <label class="label" for="servicio">Servicio</label>
+          <input
+            class="input"
+            type="text"
+            id="servicio"
+            placeholder="Cual servicio quieres"
+            required
+          />
+        </div>
+
+        <div class="campo">
+          <label class="label" for="email">Correo electrónico</label>
+          <input
+            class="input"
+            type="email"
+            id="email"
+            placeholder="Ingresa tu correo electronico"
+            required
+          />
+        </div>
+
+        <div class="campo">
+          <label class="label" for="telefono">Telefono</label>
+          <input
+            class="input"
+            type="tel"
+            id="telefono"
+            placeholder="(XX) xxxx-xxxx"
+            required
+          />
+        </div>
+
+        <div class="campo">
+          <label class="label" for="mensaje">Mensaje</label>
+          <textarea
+            class="txtArea"
+            name="mensaje"
+            id="mensaje"
+            required
+          ></textarea>
+        </div>
+
+        <fieldset>
+          <legend>¿Como desea ser contactado?</legend>
+          <div class="radio">
+            <div class="campo">
+              <input type="radio" name="contacto" id="correo" />
+              <label class="label" for="correo">Email</label>
+            </div>
+
+            <div class="campo">
+              <input type="radio" name="contacto" id="telef" />
+              <label class="label" for="telef">Telefono</label>
+            </div>
+
+            <div class="campo">
+              <input type="radio" name="contacto" id="whatsapp" checked />
+              <label class="label" for="whatsapp">WhatsApp</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="btnFormularo">
+          <input
+            class="btnEnviar"
+            id="btnEnviar"
+            type="submit"
+            value="Enviar Formulario"
+          />
+        </div>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-div">
+        <p class="footer__texto">
+          &copy; Todos los derechos reservados
+          <strong>| DevInside 2023 | Gabriel Damian</strong>
+        </p>
+        <div class="enlaces">
+          <a
+            class="footer__enlace"
+            href="https://github.com/sldmDAMIAN"
+            target="_blank"
+            ><i class="fa-brands fa-square-github"></i
+          ></a>
+          <a
+            class="footer__enlace"
+            href="https://www.linkedin.com/in/gabriel-damian-freelance/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a class="footer__enlace" href="https://www.facebook.com/Devlnside"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
 
     <script src="./assets/js/app.js"></script>
   </body>
