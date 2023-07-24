@@ -1,0 +1,16 @@
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-Contacto {
+  margin: 100px;
+  background-color: #18a04a;
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.btn-Contacto:hover {
+  background-color: #137938;
+  color: #ffffff;
+}
