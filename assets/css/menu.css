@@ -4,6 +4,7 @@
   background-color: var(--secundario);
   position: fixed;
   z-index: 10;
+  margin: 0;
 }
 
 .cabecera {
@@ -11,6 +12,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 10rem;
+  margin: 0;
 }
 
 .logo {
